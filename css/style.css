@@ -28,13 +28,13 @@ header{
 	padding:40px 2%;
 	background-size: cover;
 	background-position: center;
-	background-image: url('/imagens/capa.png');
+	background-image: url('../imagens/capa.png');
 	font-weight: 300;
 }
 header .logo {
     width: 170px;
     height: 40px;
-    background-image: url('/imagens/Logo1\ \(2\).png');
+    background-image: url('../imagens/Logo1\ \(2\).png');
     background-size: cover;
     float: left;
 }
@@ -52,7 +52,7 @@ nav.mobile-menu {
     display: none;
     width: 32px;
     height: 32px;
-    background-image: url('/imagens/cardapio.png');
+    background-image: url('../imagens/cardapio.png');
     background-size: 100% 100%;
 }
 
@@ -181,7 +181,7 @@ section.sessao1 .container {
 	float: left;
 	width: 50%;
 	height: 330px;
-	background-image: url('/imagens/foto.png');
+	background-image: url('../imagens/foto.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
