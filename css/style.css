@@ -385,14 +385,6 @@ section.sessao4{
     transition: 0.4s;
 }
 
-.form form [type=submit]:hover {
-    text-align: center;
-    line-height: 54px;
-    width: 170px;
-    height: 54px;
-    background-color: #710079;
-}
-
 .map-wraper{
 	float: left;
 	width: 50%;
