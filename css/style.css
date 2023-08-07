@@ -28,13 +28,13 @@ header{
 	padding:40px 2%;
 	background-size: cover;
 	background-position: center;
-	background-image: url(../imagens/capa.png);
+	background-image: url('../imagens/capa.png');
 	font-weight: 300;
 }
 header .logo {
     width: 170px;
     height: 40px;
-    background-image: url(../imagens/Logo1\ \(2\).png);
+    background-image: url('../imagens/Logo1\ \(2\).png');
     background-size: cover;
     float: left;
 }
@@ -52,17 +52,13 @@ nav.mobile-menu {
     display: none;
     width: 32px;
     height: 32px;
-    background-image: url(../imagens/cardapio.png);
+    background-image: url('../imagens/cardapio.png');
     background-size: 100% 100%;
 }
 
-nav.mobile-menu:hover ul{
-    opacity: 1;
-}
 
 nav.mobile-menu ul{
-    opacity: 0;
-    transition: 1s;
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;
@@ -181,7 +177,7 @@ section.sessao1 .container {
 	float: left;
 	width: 50%;
 	height: 330px;
-	background-image: url(../imagens/foto.png);
+	background-image: url('../imagens/foto.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
@@ -247,10 +243,19 @@ section.sessao2 {
     height: 300px;
 }
 
+.scrollEquipe{
+    max-width: 600px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.scroll-wraper {
+    width: 100%;
+}
+
 .sobre-autor{
     float: left;
-    max-width: 600px;
-    margin-left: 30px;
+    width: 100%;
 }
 
 .titulo-autor{
@@ -279,10 +284,11 @@ section.sessao2 {
     border-radius: 20px;
     float: left;
     position: relative;
-    top: -4px;
+    top: 4px;
     width: 40px;
     height: 40px;
     background-color: green;
+    z-index: 10;
 }
 
 .texto-autor{
@@ -313,6 +319,7 @@ section.sessao4{
 }
 
 .form {
+    margin: 0 auto;
     width: 50%;
     float: left;
     padding-left: 10px;
@@ -385,6 +392,14 @@ section.sessao4{
     transition: 0.4s;
 }
 
+.form form [type=submit]:hover {
+    text-align: center;
+    line-height: 54px;
+    width: 170px;
+    height: 54px;
+    background-color: #710079;
+}
+
 .map-wraper{
 	float: left;
 	width: 50%;
@@ -419,28 +434,14 @@ section.sessao4{
 	width: 100%;
 	height: 100%;
 	background: white;
-	border:5px solid rgb(173, 115, 201);
-    -webkit-box-shadow: 23px 14px 21px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 23px 14px 21px -12px rgba(0,0,0,0.75);
-box-shadow: 23px 14px 21px -12px rgba(0,0,0,0.75);
+	border:5px solid rgb(200,200,200);
 }
 
-footer {
-    color: white;
-    padding: 40px 0;
-    background-color: #08010c;
-    width: 100%;
-}
 
-footer p:nth-last-of-type(1){
-    float: left;
-}
-
-footer p:nth-last-of-type(2){
-    float: right;
-}
 
 @media screen and (max-width: 768px) {
+
+
 
     header{
         width: 100%;
@@ -461,6 +462,17 @@ footer p:nth-last-of-type(2){
         float: none;
         max-width: 600px;
         margin: 100px 0;
+    }
+
+    .form{
+        padding: 0 2%;
+        float: none;
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+        float: none;
     }
     
     section.sessao1 {
@@ -483,42 +495,9 @@ footer p:nth-last-of-type(2){
     .device-sessao1{
         display: none;
     }
-    section.sessao4{
-        text-align: center;
-    }
 
-    .form p {
-        display: inline-block;
-    }
-
-    .form {
-        float: none;
-        width: 100%;
-    }
-
-    .map-wraper {
-        float: none;
-        width: 100%;
-        margin-top: 40px;
-        padding: 0 4%;
-    }
-
-    .map-wraper3{
-        margin-top:10px;
-        display: inline-block;
-        width: 80%;
-        padding-top: 80%;
-        max-width: none;
-        position: relative;
-    }
-    
-    .map-wraper2{
-        position: absolute;
-        left: 0;
-        top:0;
-        width: 100%;
-        height: 100%;
-        padding-top:0;
+    .map-wraper{
+        display: none;
     }
     
 }
@@ -532,18 +511,5 @@ footer p:nth-last-of-type(2){
         width: 100%;
         padding: 40px 0;
         height: auto;
-    }
-
-    footer {
-        text-align: center;
-    }
-    
-    footer p:nth-last-of-type(1){
-        float: none;
-    }
-    
-    footer p:nth-last-of-type(2){
-        float: none;
-        margin-top: 10px;
     }
 }
